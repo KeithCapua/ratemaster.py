@@ -47,8 +47,6 @@ def convert_currency(currency_map):
             if rate:
                 converted_amount = amount * rate
                 print(f"RESULT: {amount} {from_country} ({from_currency}) = {converted_amount:.2f} {to_country} ({to_currency})")
-            else:
-                print("Rate not available.")
         except:
             print("Error getting rate")
             
